@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="img/filmico.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Movie page</title>
+    </head>
+    <body>
+        <!-- <header>
+            <form id="form">
+                <input type="text" placeholder="Search for movie..." id="search" class="search"/>
+            </form>
+        </header> -->
+
+
+        <header>
+
+            <nav>
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!-- <ul class="nav-links">
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-film"></i> Movies</a></li>
+                    <li><a href="#"><i class="fas fa-music"></i> Music</a></li>
+                    <li><a href="#"><i class="fas fa-eye"></i> Watchlist</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> Favorites</a></li>
+                </ul>  -->
+
+            <form id="form">
+                <div class="search-container">
+                    <!-- <i class="fas fa-search search-icon"></i> -->
+                    <input type="text" placeholder="Search" id="search" class="search"/>
+                    <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                    <button type="button" class="mic-btn" id="mic-btn"><i class="fas fa-microphone"></i></button>
+                </div>
+            </form>
+            <!-- </nav> -->
+        </header>
+        <div id="tags"></div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="overlay-content" id="overlay-content"></div>
+
+            <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a>
+
+            <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&#8658;</a>
+        </div>
+        <main id="main"></main>
+        <div class="pagination">
+            <div class="page" id="prev">&#8656; Prev</div>
+            <div class="current" id="current">1</div>
+            <div class="page" id="next">Next &#8658;</div>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/f7a442f79b.js" crossorigin="anonymous"></script>
+    </body>
+</html>
